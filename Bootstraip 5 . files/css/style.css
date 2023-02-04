@@ -1,0 +1,44 @@
+ :root {
+     --color_1:rgb(23, 17, 58);
+     --color_2:rgb(255, 255, 255);
+     --color_3:rgb(226, 77, 77);
+ }
+
+body {
+    font-family: 'Roboto' , sans-serif;
+}
+
+/* start Navbar */
+
+.navbar {
+    background-color:var(--color_1) !important;
+}
+
+.nav-link {
+    color:var(--color_2) !important; 
+}
+
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
+    color:var(--color_3) !important;
+}
+
+.navbar .navbar-toggler:focus {
+    color: white !important;
+    font-size: 20px !important;
+    border-color: white !important;
+    box-shadow: none !important; 
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: rgba(238, 17, 17, 0.841) !important;
+}
+/* end Navbar */
+
+/*start landing*/
+.landing {
+    background-color: var(--color_1);
+    min-height: 100vh;
+}
+/*End landing*/

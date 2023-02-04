@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.backgronud {
+    opacity: 0.366;
+    z-index: -1;
+    filter: blur(2px);
+    width:100%;
+    height:100%;
+
+}
+
+.container {
+    background-color: transparent;
+    margin: 10px;
+    padding: 15px;
+}
+
+.search {
+    border-radius: 7px;
+    width:200px;
+    height:35px;
+    border:2px solid none;
+    background: none;  
+    color: rgb(217, 47, 47);  
+    font-size: 16px;
+    transition: 0.8s;
+    line-height: 40px;
+    width: 0;
+    height: 0;
+    letter-spacing: 1px;
+}
+
+.btn1 {
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 7px;
+    width: 37px;
+    height: 32px;
+    border:5px solid none;
+    margin-top: -3%;
+    
+
+}
+
+::placeholder:hover {
+    color: transparent;
+    font-weight: 100;
+    transition: 1s ease-in;
+
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    color: #e84118;
+}
+
+
+.nav-item:hover > .search{
+    width: 240px;
+    height: 30px;
+    padding: 0 5px;
+    border:2px solid white;
+
+    
+}
+
+.search-btn{
+    color: #e84118;
+    float: right;
+    background-color: #e84118;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width:135px;
+    height:85px;
+    z-index: 1;
+    position: absolute;
+    top:-8px;
+    left:5px;
+}
+
+
+.color{
+border-radius: 10px;
+width: 35px;
+height:35px ;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Start Section One */
+.titlename{
+  margin-top: 20px;
+}
+/* End Section One */
+
+/* mods */
+.mw{
+    width: 80px;
+    margin: 10px 0px 20px 30px;
+    display: inline;
+}
+.aaaa{
+    text-decoration: none;
+    color: black;
+}
+.aaaa:hover{
+  color: #e84118;
+}
+.ti1{
+    font-size: 15px;
+    display: inline;
+    position:absolute;
+    margin-top: 15px;
+}
+.tx1{
+    font-size: 14px;
+    position:absolute;
+    display: inline;
+    margin-top: 45px;
+    background-attachment: scroll;
+}
+/* end mode */
+
+/* Start Contact Us */
+.floating-contact-form .contact-icon {
+  position: fixed;
+  bottom: 15px;
+  right: 50px;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.floating-contact-form .contact-icon i {
+  font-size: 42px;
+  color: #a32532;
+  transition: all 300ms ease;
+}
+
+.floating-contact-form .contact-icon i:hover {
+  transform: scale(1.1);
+  color: #ca2e3e;
+}
+
+.floating-contact-form .form-container {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  padding: 24px 36px;
+  width: 440px;
+  margin-top:70px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  background-color:#fff;
+
+  transform: rotateZ(-6deg);
+  transform-origin: bottom right;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 500ms ease;
+}
+
+.floating-contact-form .form-container.active {
+  transform: rotateZ(0deg);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.floating-contact-form * {
+  box-sizing: border-box;
+
+}
+
+.floating-contact-form h3 {
+  font-size: 20px;
+  color: #003049;
+  margin-top: 10px;
+  position: relative;
+}
+
+.floating-contact-form h3::after {
+  content: "";
+  height: 3px;
+  width: 56px;
+  background: #ef233c;
+  position: absolute;
+  left: 150px;
+  bottom: -4px;
+}
+
+.floating-contact-form form input[type="text"],
+.floating-contact-form form textarea {
+  width: 100%;
+  padding: 14px 32px;
+  padding-left: 40px;
+  font-size: 16px;
+  border: 1px solid rgba(0, 47, 73, 0.3);
+  border-radius: 8px;
+  color: #003049;
+  margin-bottom: 20px;
+}
+
+.floating-contact-form form input:focus,
+.floating-contact-form form textarea:focus {
+  outline: none;
+}
+
+.floating-contact-form .field-container {
+  position: relative;
+}
+
+.floating-contact-form .field-container label {
+  position: absolute;
+  top: 16px;
+  left: 220px;
+  color: #003049;
+  border-left: 8px solid #fff;
+  border-right: 8px solid #fff;
+  transition: all 300ms ease;
+  pointer-events: none;
+}
+
+.floating-contact-form .field-container label.active {
+  font-size: 11px;
+  background: #ef233c;
+  color: #fff;
+  padding: 2px 16px;
+  top: -8px;
+  left: 220px;
+  font-weight: bold;
+}
+
+.floating-contact-form .field-container i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  color: #d63948;
+}
+
+.floating-contact-form form textarea {
+  height: 150px;
+  resize: none;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.floating-contact-form form input[type="submit"] {
+  border: none;
+  background: #a32532;
+  color: #fff;
+  padding: 16px 32px;
+  width: 100%;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.floating-contact-form form input[type="submit"]:hover {
+  background: #dc3545;
+  transition: 1s;
+}
+.Us{
+  background-color: #e84118;
+  border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End Contact Us */
+
+
+
+
+
+
+/*Start media query */
+
+/* small monitors */
+@media (min-width: 576px) {
+    .container {
+        padding-left:45px;
+        padding-right:45px;
+    }
+
+    .logo {
+        position: absolute;
+        top:-5px;
+        left:5px;
+    }
+}
+
+/* medium monitors */
+@media (min-width: 768px) {
+    .container {
+        padding-left:35px;
+        padding-right:35px;
+
+    }
+}
+
+/*  large monitors */
+@media (min-width: 992px) {
+    .container {
+        padding-left:25px;
+        padding-right:25px;
+    }
+}
+
+/*  Extra monitors */
+@media (min-width: 1200px) {
+    .container {
+        padding-left:15px;
+        padding-right:15px;
+    }
+}
+@media screen and (max-width: 600px) {
+  .floating-contact-form .form-container {
+    width: 370px;
+  }
+
+  .floating-contact-form h3 {
+    font-size: 25px;
+    ;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .floating-contact-form .form-container {
+    width: 280px;
+  }
+
+  .floating-contact-form h3 {
+    font-size: 20px;
+    ;
+  }
+
+  .floating-contact-form .field-container label.active {
+    font-size: 10px;
+  }
+
+  .floating-contact-form .field-container label {
+    font-size: 13px;
+  }
+
+  .floating-contact-form form input[type="text"],
+  .floating-contact-form form textarea {
+    font-size: 14px;
+  }
+
+  .floating-contact-form .contact-icon i {
+    font-size: 30px;
+  }
+}
+
+/*End media query */
